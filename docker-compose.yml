@@ -14,10 +14,18 @@ services:
     env_file: .env
     depends_on: 
       - mongo-database
+    networks:
+      - node-app-network
   mongo-database:
     image: 'mongo'
     restart: unless-stopped
     ports:
-      - '27017:27017'
+      - '27018:27017'
     volumes:
       - ./mongo_db:/data/db
+    networks:
+      - node-app-network
+
+networks:
+  node-app-network:
+    driver: bridge
