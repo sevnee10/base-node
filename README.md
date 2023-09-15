@@ -1,6 +1,3 @@
-# Base-node
-A base project for nodejs, express and mongdb
-
 # Clone project
 `git clone git@base_node:sevnee10/base-node.git`
 
