@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  nodeapp:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '7698:7698'
+    volumes:
+      - .:/usr/src/app
+      - node_modules
+    env_file: .env
+    depends_on: 
+      - mongo-database
+  mongo-database:
+    image: 'mongo'
+    restart: unless-stopped
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./mongo_db:/data/db

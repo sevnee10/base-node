@@ -1,0 +1,19 @@
+{
+	"statusCodes.OK": "Success!",
+	"statusCodes.UNAUTHORIZED": "Please login your account!",
+	"statusCodes.NOT_FOUND": "Not Found!",
+	"statusCodes.BAD_REQUEST": "Please fill in the correct information.",
+	"statusCodes.INTERNAL_SERVER_ERROR": "Something went wrong, please try again!",
+	"auth.login.email": "User Not found.",
+	"auth.login.password": "Invalid password!",
+	"validation.notEmpty": "The %s is required.",
+	"validation.isArray": "The %s must be an array.",
+	"validation.isArray.min": "The %s must have at least %s items.",
+	"validation.isArray.max": "The %s must not have more than %s items.",
+	"validation.isEmail": "The %s must be an email.",
+	"validation.isIn": "The %s does not exist in: %s.",
+	"validation.isLength.min": "The %s must be at least %s characters.",
+	"validation.isLength.max": "The %s must not be greater than %s characters.",
+	"validation.isNumeric": "The %s must be a number.",
+	"validation.isString": "The %s must be a string."
+}
