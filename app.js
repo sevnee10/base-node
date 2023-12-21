@@ -29,7 +29,7 @@ const init = async () => {
 
 init().then()
 
-const port = 3000
+const port = process.env.PORT || '7698'
 app.set('port', port)
 server.listen(port)
 server.on('error', onError)
