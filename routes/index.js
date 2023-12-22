@@ -13,8 +13,8 @@ module.exports = app => {
     res.send('This is dashboard')
   });
 
-  app.get('/test1', (req, res) => {
-    res.send('This is test route1')
+  app.get('/test2', (req, res) => {
+    res.send('This is test route2')
   });
 
   app.get('/login', (req, res) => {
