@@ -9,12 +9,8 @@ const routes = [
 ];
 
 module.exports = app => {
-  app.get('/', (req, res) => {
+  app.get('/dashboard', (req, res) => {
     res.send('This is dashboard')
-  });
-
-  app.get('/test2', (req, res) => {
-    res.send('This is test route2')
   });
 
   app.get('/login', (req, res) => {
