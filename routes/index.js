@@ -13,6 +13,10 @@ module.exports = app => {
     res.send('This is dashboard')
   });
 
+  app.get('/test', (req, res) => {
+    res.send('This is test route')
+  });
+
   app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/views/auth/login.html'))
   });
