@@ -64,6 +64,10 @@
 
     axios.post('/api/auth/login', { email, password })
       .then(response => {
+        console.log(
+          '%c Hello, Everyone!',
+          'padding: 15px; background-color: #2ecc71; color: black'
+        );
         if (response.data.code === 200) {
           localStorage.setItem('auth', JSON.stringify(response.data))
           window.location = '/'

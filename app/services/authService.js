@@ -12,7 +12,7 @@ const login = async(req, res, next) => {
       code: global.STATUS_CODES.UNAUTHORIZED,
       message: res.__('auth.login.email')
     })
-  
+
   const isValidPassword = compare(input.password, user.password)
   if (!isValidPassword)
     return res.json({

@@ -8,8 +8,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - '7698:7698'
-    volumes:
-      - .:/usr/src/app
     env_file: .env
     depends_on: 
       - mongo-database
