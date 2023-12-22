@@ -4,13 +4,13 @@ RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 
-COPY package.json /usr/src/app
+COPY package.json ./
 
 RUN npm i
 
 RUN npm i -g nodemon
 
-COPY . /usr/src/app
+COPY . .
 
 EXPOSE 7698
 
